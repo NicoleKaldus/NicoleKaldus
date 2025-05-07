@@ -27,6 +27,8 @@ jobs:
 
       - name: Metrics embed
         uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.metrics }}
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
